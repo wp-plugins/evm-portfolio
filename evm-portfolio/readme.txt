@@ -32,20 +32,17 @@ Follow us on facebook for latest updates about plugin : <a href="http://facebook
 4. Php code for template file- <?php evm_portfolio(); ?>
 5. You can assign a single portfolio item to multiple filter categories.
 
-
-== Installation ==
-
-1. Upload the folder 'evm-portfolio' to the directory '/wp-content/plugins/'.
-2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
-3. You can see custom post type "Portfolio" in your WordPress admin panel.
-
-
 = Support & Customizations =
 
 If you have any questions regarding the plugin then feel free to contact us. You can also contact us if you need any sort of customizations in the plugin like color and styling changes, or functional changes. Click here and submit a ticket if you need any sort of customizations: http://www.expertvillagemedia.com/plugin-support/. Customizations will be charged as per requirement.
 
 If you find any bugs in our plugin, let us know. We will be glad to see your valuable reviews here which will help us to improve this wordpress portfolio plugin for you.
 
+== Installation ==
+
+1. Upload the folder 'evm-portfolio' to the directory '/wp-content/plugins/'.
+2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
+3. You can see custom post type "Portfolio" in your WordPress admin panel.
 
 == Frequently asked questions ==
 For any question you can <a href="http://www.expertvillagemedia.com/plugin-support/">contact here</a> 
