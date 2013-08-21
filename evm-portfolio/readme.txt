@@ -18,6 +18,7 @@ This portfolio plugin is highly suitable to showcase your work / portfolio and g
 
 To see the demo <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank">click here</a>
 
+Please add your valuable review for our plugin here.
 
 = Features =
 
