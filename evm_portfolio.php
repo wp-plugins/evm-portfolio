@@ -1,10 +1,10 @@
 <?php 
 /*
-  Plugin Name: evm portfolio
+  Plugin Name: EVM portfolio plugin
   Plugin URI: http://www.expertvillagemedia.com/portfolio
-  Description: Using this free plugin you can transform your portfolio in a gallery form. It has social media icons which visitors can like portfolio on facebook, twitter and linkedin.
-  Version: 1.1
-  Author: Ashish Mishra, Amit Porwal
+  Description: Using this free portfolio plugin you can showcase your work in a jquery filtered portfolio system. You can also enable social sharing buttons on portfolio items
+  Version: 1.2
+  Author: Amit Porwal, Ashish Mishra
   Author URI: http://expertvillagemedia.com/
   License: GPLv2 or later
  */
