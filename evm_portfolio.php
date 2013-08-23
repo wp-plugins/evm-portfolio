@@ -192,16 +192,16 @@ $evm_linkedin= get_option('evm_linkedin');
 						}
 				 }
 				 echo "</ul>";
-			?>
-			<?php 
+?>
+<?php 
 				$loop = new WP_Query(array('post_type' => 'portfolio', 'posts_per_page' => -1));
 				$count =0;
 			?>
 			<div id="portfolio-wrapper">
 				<ul id="portfolio-list">
-				<?php if ( $loop ) : 
+<?php if ( $loop ) : 
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
-						<?php
+<?php
 						$terms = get_the_terms( $post->ID, 'filterportifolio' );
 						if ( $terms && ! is_wp_error( $terms ) ) : 
 							$links = array();
@@ -214,8 +214,8 @@ $evm_linkedin= get_option('evm_linkedin');
 						else :	
 							$tax = '';	
 						endif;
-						?>
-						<?php $infos = get_post_custom_values('_url'); ?>
+?>
+<?php $infos = get_post_custom_values('_url'); ?>
 						<li class="portfolio-item <?php echo strtolower($tax); ?> all">
 							<div class="thumb"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array(600, 300) ); ?></a></div>
 							<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
@@ -224,27 +224,27 @@ $evm_linkedin= get_option('evm_linkedin');
                            
 							
                             <div class="socialicons">
-                            <?php if($evm_fb=='true') { ?>
+<?php if($evm_fb=='true') { ?>
                             <div class="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=button_count&amp;show_faces=false&amp;
 width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:60px;">
 							</iframe><div id="fb-root"></div>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script></div> 
-							 <?php } ?>
-							<?php if($evm_twitter=='true') { ?>                            
+<?php } ?>
+<?php if($evm_twitter=='true') { ?>                            
                             <div class="twitter"><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
                            	 <a href="http://twitter.com/share?url=<?php echo urlencode(get_permalink($post->ID)); ?>&via=wpbeginner&count=horizontal" class="twitter-share-button">Tweet</a>
                             </div>
 
-							<?php } if($evm_linkedin=='true') { ?>
+<?php } if($evm_linkedin=='true') { ?>
                             <div class="linkedin"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></div>
-							<?php } ?>
+<?php } ?>
                         </div>
                        
                         
                         </li>
-					<?php endwhile; else: ?>
+<?php endwhile; else: ?>
 					<li class="error-not-found">Sorry, no portfolio entries for while.</li>		
-				<?php endif; ?>
+<?php endif; ?>
 				</ul>
 				<div class="clearboth"></div>
 			</div>
