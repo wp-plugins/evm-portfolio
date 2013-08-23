@@ -3,7 +3,7 @@
 	<div style="margin-left:0px; float: left; width:800px;">
 		<form method="post" action="options.php"><?php wp_nonce_field('update-options'); ?>
 			<div class="inside">
-            	<div class="social"><h3>Social icons on portfolios</h3></div>
+            	<div class="social"><h3>Add social sharing buttons on your portfolio items</h3><br/> You can select which sharing icon you want to enable.</div>
 				<table class="form-table">
                 	<tr>
 						<th><label for="evm_fb">Facebook:</label></th>
@@ -44,6 +44,8 @@
                 <p>To show the portfolio on your website, use the shortcode or php code provided here:	<br/>
                     Shortcode to add in post/page editor or widgets - [evm-portfolio]<br/>
                     Phpcode to add in template php files - evm_portfolio();<br/>
+					
+					If you need any customizations in the design of your portfolio page then feel free to contact us here: http://www.expertvillagemedia.com/plugin-support/
                 </p>
 			</div>
 		</form>
