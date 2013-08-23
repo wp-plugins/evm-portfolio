@@ -2,8 +2,8 @@
 /*
   Plugin Name: evm portfolio
   Plugin URI: http://www.expertvillagemedia.com/portfolio
-  Description:  This portfolio plugin is highly suitable to showcase your work / portfolio and group them nicely under jQuery powered filters.
-  Version: 1.0
+  Description: Using this free plugin you can transform your portfolio in a gallery form. It has social media icons which visitors can like portfolio on facebook, twitter and linkedin.
+  Version: 1.1
   Author: Ashish Mishra, Amit Porwal
   Author URI: http://expertvillagemedia.com/
   License: GPLv2 or later
@@ -162,7 +162,24 @@ function enqueue_filterable()
 	}
 add_action('wp_enqueue_scripts', 'enqueue_filterable');
 
+function evm_portfolio_admin_menu() {
+    add_submenu_page('edit.php?post_type=portfolio', 'settings', 'Settings', 'manage_options', 'portfolio_settings', 'portfolio_settings_page');; 
+}
+
+add_action('admin_menu', 'evm_portfolio_admin_menu');
+
+function portfolio_settings_page(){
+	
+require_once( ABSPATH . 'wp-content/plugins/evm-portfolio/options.php' ); 
+	
+}
+
+
 function evm_portfolio(){	
+$evm_fb= get_option('evm_fb'); 
+$evm_twitter= get_option('evm_twitter');
+$evm_linkedin= get_option('evm_linkedin');
+
 				 $terms = get_terms("filterportifolio");
 				 $count = count($terms);
 				 echo '<ul id="portfolio-filter">';
@@ -204,7 +221,27 @@ function evm_portfolio(){
 							<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
 							<p class="excerpt"><a href="<?php the_permalink() ?>"><?php excerpt('30'); ?></a></p>
 							<p class="links"><a href="<?php echo $infos[0]; ?>" target="_blank">Live Preview &rarr;</a> <a href="<?php the_permalink() ?>">More Details &rarr;</a></p>
-						</li>
+                           
+							
+                            <div class="socialicons">
+                            <?php if($evm_fb=='true') { ?>
+                            <div class="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=button_count&amp;show_faces=false&amp;
+width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:60px;">
+							</iframe><div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script></div> 
+							 <?php } ?>
+							<?php if($evm_twitter=='true') { ?>                            
+                            <div class="twitter"><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+                           	 <a href="http://twitter.com/share?url=<?php echo urlencode(get_permalink($post->ID)); ?>&via=wpbeginner&count=horizontal" class="twitter-share-button">Tweet</a>
+                            </div>
+
+							<?php } if($evm_linkedin=='true') { ?>
+                            <div class="linkedin"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></div>
+							<?php } ?>
+                        </div>
+                       
+                        
+                        </li>
 					<?php endwhile; else: ?>
 					<li class="error-not-found">Sorry, no portfolio entries for while.</li>		
 				<?php endif; ?>
@@ -224,7 +261,10 @@ function evm_portfolio(){
 #portfolio-list .portfolio-item h3 a {color: #084a9a;text-transform: uppercase;	font-weight: bold;}
 #portfolio-list .portfolio-item .excerpt{text-align: justify;font-size: 14px;line-height: 18px;	padding-right: 15px;margin-bottom: 5px;}
 #portfolio-list .portfolio-item .excerpt a {color: #555;}
-#portfolio-list .portfolio-item .excerpt a:hover {text-decoration: none;} 
+#portfolio-list .portfolio-item .excerpt a:hover {text-decoration: none;}
+.fb{ float:left; width:27%; margin-right:10px;} 
+.twitter{float:left; width:29%; margin-right:10px;}
+.linkedin{ float:left; width:34%; } 
 </style>  			
 
 <script type="text/javascript">
@@ -244,6 +284,7 @@ function evmportfolio_shortcode() {
 	return $out1;
 }
 add_shortcode('evm-portfolio','evmportfolio_shortcode');
+
 
 
 function excerpt($num) {
