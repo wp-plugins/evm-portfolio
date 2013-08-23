@@ -1,6 +1,6 @@
 <?php 
 /*
-  Plugin Name: EVM portfolio plugin
+  Plugin Name: EVM portfolio
   Plugin URI: http://www.expertvillagemedia.com/portfolio
   Description: Using this free portfolio plugin you can showcase your work in a jquery filtered portfolio system. You can also enable social sharing buttons on portfolio items
   Version: 1.2
