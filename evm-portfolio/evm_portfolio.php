@@ -2,7 +2,7 @@
 /*
   Plugin Name: evm portfolio
   Plugin URI: http://www.expertvillagemedia.com/portfolio
-  Description: Using this free plugin you can transform your portfolio in a gallery form.
+  Description:  This portfolio plugin is highly suitable to showcase your work / portfolio and group them nicely under jQuery powered filters.
   Version: 1.0
   Author: Ashish Mishra, Amit Porwal
   Author URI: http://expertvillagemedia.com/
