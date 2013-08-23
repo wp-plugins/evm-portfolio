@@ -16,7 +16,7 @@
 							</select></td>
 					</tr>  
                     <tr>
-						<th><label for="evm_twitter">Twiiter:</label></th>
+						<th><label for="evm_twitter">Twitter:</label></th>
 						<td><select name="evm_twitter" id="evm_social">
 
 								<option value="true" <?php if(get_option('evm_twitter') == "true") {echo "selected='selected'";}?>>Yes</option>
@@ -42,10 +42,12 @@
 					</tr>  
 				</table>
                 <p>To show the portfolio on your website, use the shortcode or php code provided here:	<br/>
-                    Shortcode to add in post/page editor or widgets - [evm-portfolio]<br/>
-                    Phpcode to add in template php files - evm_portfolio();<br/>
-					
-					If you need any customizations in the design of your portfolio page then feel free to contact us here: http://www.expertvillagemedia.com/plugin-support/
+                    
+					Shortcode to add in post/page editor or widgets - [evm-portfolio]<br/>
+                    
+					Phpcode to add in template php files - evm_portfolio();</p>
+			<p>		
+					If you need any customizations in the design of your portfolio page then feel free to contact us here: <a href="http://www.expertvillagemedia.com/plugin-support/">http://www.expertvillagemedia.com/plugin-support/</a>
                 </p>
 			</div>
 		</form>
