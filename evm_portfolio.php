@@ -295,4 +295,12 @@ $excerpt = implode(" ",$excerpt)."...";
 echo $excerpt;
 }
 
+function your_plugin_settings_link($links) { 
+  $settings_link = '<a href="edit.php?post_type=portfolio&page=portfolio_settings">Settings</a>'; 
+  array_unshift($links, $settings_link); 
+  return $links; 
+}
+ 
+$plugin = plugin_basename(__FILE__); 
+add_filter("plugin_action_links_$plugin", 'your_plugin_settings_link' );
 ?>
