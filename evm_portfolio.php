@@ -5,7 +5,7 @@
   Description: Using this free portfolio plugin you can showcase your work in a jquery filtered portfolio system. You can also enable social sharing buttons on portfolio items
   Version: 1.2
   Author: Amit Porwal, Ashish Mishra
-  Author URI: http://expertvillagemedia.com/
+  Author URI: http://www.expertvillagemedia.com/
   License: GPLv2 or later
  */
 
