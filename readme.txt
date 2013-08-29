@@ -1,6 +1,6 @@
 === Evm Portfolio ===
 
-Contributors: expertvillagemedia, ashu1264
+Contributors: Amit Porwal, ashu1264
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=amit_porwal86@yahoo.com&currency_code=USD&amount=3&return=&item_name=Donation%20for%20WordPress%20Portfolio%20plugin
 Tags:  portfolio, gallery, filterable portfolio, jquery portfolio, portfolio plugin, portfolio with filters, filter portfolio plugin, web design company portfolio plugin
 Requires at least: 2.8
