@@ -38,9 +38,9 @@ If you have any questions regarding the plugin then feel free to contact us. You
 
 If you find any bugs in our plugin, let us know. We will be glad to see your valuable reviews here which will help us to improve this wordpress portfolio plugin for you.
 
-Plugin by: 
-Expert Village Media Technologies
-The Wordpress Developer
+Plugin by:<br/>
+Expert Village Media Technologies<br/>
+The Wordpress Developer<br/>
 http://www.expertvillagemedia.com/
 
 == Installation ==
