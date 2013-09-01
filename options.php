@@ -57,7 +57,7 @@
 <br /><br />If you need any customizations in your wordpress theme or need a completely new wordpress theme design then feel free to contact us here: <a href="mailto:info@expertvillagemedia.com">info@expertvillagemedia.com</a>
 	
          </div>
-                	<a href="http://www.expertvillagemedia.com" target="_blank"><img src="<?php echo $direct_path ?>/img/banner.jpg"/></a>
+                	
         </div>
 	</div>
 	</div>
