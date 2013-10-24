@@ -16,7 +16,7 @@ This portfolio plugin is highly suitable to showcase your work / portfolio and g
 
 <h3>EVM Portfolio</h3>Using this plugin, you can showcase your work/projetcs in a nice gallery format with jquery filters. The most important feature of this plugin is that you can assign a single portfolio item into multiple filters or categories. Other plugins are available there but they dont provide this feature.
 
-To see the demo <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank">click here</a>
+You can see plugin demo here but we have changed css of plugin as per the design of our website. You can change css or hire a web designer for that if needed. Many users ask us that why demo is not like the plugin, but remember that demo is just for functional reference, not design reference. <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank">click here</a>
 
 Please add your valuable review for our plugin here.
 
