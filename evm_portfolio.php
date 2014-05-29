@@ -113,6 +113,7 @@ function portfolio_meta_init()
 		add_action('save_post','portfolio_meta_save');
 	}
 	
+
 function portfolio_meta_setup()
 	{
 		global $post;	 	 
@@ -155,6 +156,8 @@ function portfolio_meta_save($post_id)
 			delete_post_meta($post_id, '_url');
 		}
 	}	
+	
+	
 function enqueue_filterable() 
 	{
 		wp_register_script( 'filterable', get_bloginfo('wpurl').'/wp-content/plugins/evm-portfolio/js/filterable.js', array( 'jquery' ) );
@@ -171,8 +174,11 @@ add_action('admin_menu', 'evm_portfolio_admin_menu');
 function portfolio_settings_page(){
 	
 require_once( ABSPATH . 'wp-content/plugins/evm-portfolio/options.php' ); 
+
 	
 }
+
+
 
 
 function evm_portfolio(){	
@@ -215,33 +221,19 @@ $evm_linkedin= get_option('evm_linkedin');
 							$tax = '';	
 						endif;
 ?>
+
+
 <?php $infos = get_post_custom_values('_url'); ?>
 						<li class="portfolio-item <?php echo strtolower($tax); ?> all">
-							<div class="thumb"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array(600, 300) ); ?></a></div>
-							<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-							<p class="excerpt"><a href="<?php the_permalink() ?>"><?php excerpt('30'); ?></a></p>
-							<p class="links"><a href="<?php echo $infos[0]; ?>" target="_blank">Live Preview &rarr;</a> <a href="<?php the_permalink() ?>">More Details &rarr;</a></p>
-                           
-							
-                            <div class="socialicons">
-<?php if($evm_fb=='true') { ?>
-                            <div class="fb"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink($post->ID)); ?>&amp;layout=button_count&amp;show_faces=false&amp;
-width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:60px;">
-							</iframe><div id="fb-root"></div>
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script></div> 
-<?php } ?>
-<?php if($evm_twitter=='true') { ?>                            
-                            <div class="twitter"><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-                           	 <a href="http://twitter.com/share?url=<?php echo urlencode(get_permalink($post->ID)); ?>&via=wpbeginner&count=horizontal" class="twitter-share-button">Tweet</a>
-                            </div>
-
-<?php } if($evm_linkedin=='true') { ?>
-                            <div class="linkedin"><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></div>
-<?php } ?>
-                        </div>
-                       
+							<div class="thumb"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail( array(250, 250) ); ?></a></div>
+<div class="evm_veiw"><a href="<?php wp_create_nonce(__FILE__); ?>" target="_blank"> <?php echo '<img src="' . plugins_url( 'img/view-details_new.png' , __FILE__ ) . '" > ';?></a></div>
+	
+				<span class="portfolio-item-meta"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a> </span>	                            
+                            <div class="live-site"> </div>                                               
                         
                         </li>
+                        
+                        
 <?php endwhile; else: ?>
 					<li class="error-not-found">Sorry, no portfolio entries for while.</li>		
 <?php endif; ?>
@@ -251,21 +243,39 @@ width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" 
             
 <style type="text/css">
 #portfolio-filter {list-style-type: none;margin-top: 10px;}
-#portfolio-filter li {display: inline;padding-right: 10px; margin:0;} 
-#portfolio-filter li a {color: #777;text-decoration: none;border-left: 1px solid #333; border-radius: 10px 10px 10px 10px; padding: 5px 10px;}
+#portfolio-filter li {display: inline; margin:0;} 
+#portfolio-filter li a {background-color:#f1f1f1;  border: 1px solid #DBDBDB; color: #7B6666;font-size: 14px; padding: 8px 15px 8px 18px;
+ text-decoration: none;}
 #portfolio-filter li .current,#portfolio-filter li:hover {color: #084a9a;}
 #portfolio-wrapper {float: left; margin-top: 20px;padding-bottom: 25px; width: 100%;}
 #portfolio-list {list-style-type: none;}
-#portfolio-list .portfolio-item {width: 288px;	float: left; margin: 0 16px 16px;}
-#portfolio-list li .thumb{ float:left; width:100%;min-height: 310px;}
-#portfolio-list .portfolio-item h3 a {color: #084a9a;text-transform: uppercase;	font-weight: bold;}
+#portfolio-list .portfolio-item {border: 1px solid #EEEEEE;box-shadow: 0 1px 2px 0 rgba(180, 180, 180, 0.2);float: left;margin: 5px;
+height:<?php echo get_option('evm_height'); ?>;  padding: 8px;  width:<?php echo get_option('evm_width'); ?>;} 
+	
+#portfolio-list li .thumb{margin: auto; display: table; }
+
+#portfolio-list li .thumb a{float:left; width:100%;}
+#portfolio-list li .thumb img{float: left; margin: 0; max-height: 280px; width: 100%;}
+#portfolio-list .portfolio-item .portfolio-item-meta{float: left; width: 89.1%; padding: 10px 15px;}
+
+#portfolio-list .portfolio-item .portfolio-item-meta a {color:<?php echo get_option('evm_tcolor'); ?>; float: left; font-size: 16px; font-weight: bold; text-align: center; text-transform: capitalize; width: 100%;}
 #portfolio-list .portfolio-item .excerpt{text-align: justify;font-size: 14px;line-height: 18px;	padding-right: 15px;margin-bottom: 5px;}
 #portfolio-list .portfolio-item .excerpt a {color: #555;}
 #portfolio-list .portfolio-item .excerpt a:hover {text-decoration: none;}
 .fb{ float:left; width:27%; margin-right:10px;} 
 .twitter{float:left; width:29%; margin-right:10px;}
 .linkedin{ float:left; width:34%; } 
-</style>  			
+#portfolio-list li:hover .live-site{  display: block;  position: absolute; top: 0;  width: 96%;  z-index: 99999;}
+
+.live-site{display:none;}
+.evm_veiw {bottom: 46%; left: 27%; position: absolute;z-index: 999999;}
+#portfolio-list li:hover .evm_veiw {display: block;}
+#portfolio-list li .evm_veiw{display: none;}
+#portfolio-list li:hover {background-color:<?php echo get_option('evm_color'); ?>;box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3); position: relative;transition: all 0.5s ease 0s;z-index: 99999; opacity:0.6; }
+li.portfolio-item:hover .portfolio-item-meta {  background-color:<?php echo get_option('evm_htbcolor'); ?>; left: 0px; position: absolute; z-index: 9999; bottom:0px;  }
+li.portfolio-item:hover .portfolio-item-meta a {color:<?php echo get_option('evm_htcolor'); ?> !important;}
+
+</style>   			
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {	

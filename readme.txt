@@ -62,4 +62,4 @@ For any question you can <a href="http://www.expertvillagemedia.com/plugin-suppo
 
 == Changelog ==
 
-Version 1.0.1
+Version 1.0.2
