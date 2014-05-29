@@ -1,6 +1,6 @@
-=== Evm Portfolio ===
+=== Expert Village Media Portfolio ===
 
-Contributors: expertvillagemedia, ashu1264
+Contributors: expertvillagemedia
 Donate link: http://www.expertvillagemedia.com
 Tags:  portfolio, gallery, filterable portfolio, jquery portfolio, portfolio plugin, portfolio with filters, filter portfolio plugin, web design company portfolio plugin
 Requires at least: 2.8
@@ -14,18 +14,18 @@ This portfolio plugin is highly suitable to showcase your work / portfolio and g
 
 == Description ==
 
-<h3>EVM Portfolio</h3>Using this plugin, you can showcase your work/projetcs in a nice gallery format with jquery filters. The most important feature of this plugin is that you can assign a single portfolio item into multiple filters or categories. Other plugins are available there but they dont provide this feature.
+<h3>Expert Village Media Portfolio</h3>
+We have coded this portfolio plugin for a easy showcasing of your projects or work on your website. You can easily add the portfolio items and categorize them too. In our previous version of this plugin, the layout was pretty basic and many users were asking if we can update it or add some documentation to enhance the look and feel. Now we have fixed some issues in it and also updated the layout of portfolio page so that you don’t need to customize it. You can even change some colors from admin panel accoding to your theme.
+Using this plugin, you can showcase your work/projetcs in a nice gallery format with jquery filters. The most important feature of this plugin is that you can assign a single portfolio item into multiple filters or categories. Other plugins are available there but they dont provide this feature.
 
-You can see plugin demo here but we have changed css of plugin as per the design of our website. You can change css or hire a web designer for that if needed. Many users ask us that why demo is not like the plugin, but remember that demo is just for functional reference, not design reference. <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank">click here</a>
+Check the demo here on our website:  <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank">click here</a>
 
-Please add your valuable review for our plugin here.
+Please add your valuable reviews for our plugin here.
 
-Follow us on facebook for latest updates about plugin : <a href="http://facebook.com/expertvillagemedia">http://facebook.com/expertvillagemedia</a>
+The plugin is free for you and we hope that you will like us on Facebook if this plugin help you : <a href="http://facebook.com/expertvillagemedia">http://facebook.com/expertvillagemedia</a>
 
 = Features =
-
 1. Custom post types for portfolio items.
-
 2. Easy filteration and jQuery sort feature.
 3. Portfolio URL feature for live demo of work/portfolio.
 3. Shortcode for pages/posts editor- [evm-portfolio]
@@ -34,16 +34,10 @@ Follow us on facebook for latest updates about plugin : <a href="http://facebook
 
 = Support & Customizations =
 
-If you have any questions regarding the plugin then feel free to contact us. You can also contact us if you need any sort of customizations in the plugin like color and styling changes, or functional changes. Click here and submit a ticket if you need any sort of customizations: http://www.expertvillagemedia.com/plugin-support/. Customizations will be charged as per requirement.
-
+If you have any questions regarding the plugin then feel free to contact us. You can also contact us if you need any sort of customizations in the plugin like color and styling changes, or functional changes. Click here to contact us if you need any sort of customizations: http://www.expertvillagemedia.com/contact/. Customizations will be charged as per requirement.
 If you find any bugs in our plugin, let us know. We will be glad to see your valuable reviews here which will help us to improve this wordpress portfolio plugin for you.
 
-Plugin by:
-
-Expert Village Media Technologies
-
-The Wordpress Developer Company
-
+Plugin by: Expert Village Media Technologies
 http://www.expertvillagemedia.com/
 
 == Installation ==
@@ -62,4 +56,4 @@ For any question you can <a href="http://www.expertvillagemedia.com/plugin-suppo
 
 == Changelog ==
 
-Version 1.0.2
+Version 1.2
