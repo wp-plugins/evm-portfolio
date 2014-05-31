@@ -15,7 +15,7 @@ This portfolio plugin is highly suitable to showcase your work / portfolio and g
 == Description ==
 
 <h3>Expert Village Media Portfolio</h3>
-We have coded this portfolio plugin for a easy showcasing of your projects or work on your website. You can easily add the portfolio items and categorize them too. In our previous version of this plugin, the layout was pretty basic and many users were asking if we can update it or add some documentation to enhance the look and feel. Now we have fixed some issues in it and also updated the layout of portfolio page so that you don’t need to customize it. You can even change some colors from admin panel accoding to your theme.
+We have coded this portfolio plugin for a easy showcasing of your projects or work on your website. You can easily add the portfolio items and categorize them too. In our previous version of this plugin, the layout was pretty basic and many users were asking if we can update it or add some documentation to enhance the look and feel. Now we have fixed some issues in it and also updated the layout of portfolio page so that you do not need to customize it. You can even change some colors from admin panel accoding to your theme.
 Using this plugin, you can showcase your work/projetcs in a nice gallery format with jquery filters. The most important feature of this plugin is that you can assign a single portfolio item into multiple filters or categories. Other plugins are available there but they dont provide this feature.
 
 Check the demo here on our website: <ul><li> <a href="http://www.expertvillagemedia.com/portfolio/" target="_blank" style="text-decoration:none">click here</a></li></ul>
